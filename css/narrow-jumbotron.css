@@ -28,9 +28,11 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 50em;
   padding: 0;
-  margin-left: 1rem;
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em; 
 }
 /* Custom page footer */
 .footer {
@@ -85,6 +87,10 @@ body {
 }
 
 #avatar {
+  margin-top: 0em;
+  margin-right: 15em;
+  margin-bottom: 2em;
+  margin-left: 15em;
   border-radius: 50%;
   border: solid 2px #ffffff;
 }
