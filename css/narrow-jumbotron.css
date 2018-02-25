@@ -19,6 +19,7 @@ body {
 .header {
   padding-bottom: 1rem;
   border-bottom: .05rem solid #e5e5e5;
+  display: block;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -27,12 +28,14 @@ body {
   line-height: 3rem;
 }
 
+
 .container {
-  width: 50em;
-  padding: 0;
-  margin: auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 1em;
   padding-right: 1em; 
+  max-width: 50em;
 }
 /* Custom page footer */
 .footer {
@@ -41,25 +44,25 @@ body {
   border-top: .05rem solid #e5e5e5;
 }
 
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-  }
-}
-.container-narrow > hr {
-  margin: 2rem 0;
+ul.nav {
+  max-width:47em;
+  font-family: 'Montserrat', monospace;
+  list-style-type:none;
+  margin:0em auto;
+  padding:0em;
+  float: right;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-  background-color: #0d1013;
+ul.nav li:hover {
+  background: rgba(0, 85, 221, 0.25);
 }
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
+ul.nav li{
+  float:left;
+  padding:1em 1em 1em 1em;
 }
+
+
+
 
 #h-name {
   color: rgb(198, 16, 45);
@@ -70,6 +73,7 @@ body {
 #h-subheading {
   color: rgb(198, 16, 45);
   border-bottom: .05rem solid rgb(198, 16, 45);
+  margin-top: 1em;
 }
 
 .lead {
@@ -80,9 +84,10 @@ body {
   color: #ce6565;
 }
 #poster {
-  width: 30vw;
-  margin-right: 20%;
-  margin-left: 20%;
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 2rem;
 }
 
@@ -90,11 +95,15 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
-  width: 30%;
-  height: 40%;
-  border-radius: 50%;
-  border: solid 2px #ffffff;
+  margin-top: 1em;
+  width: 40%;
+  height: 55%;
+  border-radius: 10%;
+}
+
+.relative {
+  position: relative;
+  float: left;
 }
 
 #head {
@@ -105,10 +114,11 @@ body {
 }
 
 #cell {
+  display: block;
   margin-bottom: 4rem;
   margin-top 2rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Supporting marketing content */
@@ -136,4 +146,27 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+@media (max-width: 580px) {
+  ul.nav{
+    padding:0em;
+    margin-bottom: 1em;
+    float: left;
+  }
+  ul.nav li {
+    box-sizing:border-box;
+    width:100%;
+    margin:0em 0em;
+    padding: 1em 1em;
+    font-size:1em;
+    border-bottom: 1px #007bff solid;
+  }
+  #avatar {
+    width: 80%;
+    height 90%;
+  }
+  #poster {
+    width: 100%;
+  }  
 }
