@@ -87,10 +87,12 @@ body {
 }
 
 #avatar {
-  margin-top: 0em;
-  margin-right: 15em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2em;
-  margin-left: 15em;
+  width: 30%;
+  height: 40%;
   border-radius: 50%;
   border: solid 2px #ffffff;
 }
