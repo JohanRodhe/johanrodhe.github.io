@@ -36,6 +36,10 @@ a {
   line-height: 3rem;
 }
 
+.container-fluid {
+  max-width: 1400px;
+  width: 80%;
+}
 
 .container {
   overflow: hidden;
@@ -155,7 +159,7 @@ ul.nav li{
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
   ul.nav{
     padding:0em;
     margin-bottom: 1em;
