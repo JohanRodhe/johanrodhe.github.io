@@ -1,8 +1,6 @@
 /* Space out content a bit */
 body {
   font-family: Montserrat;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   background-color: #020202;
   color: #ffffff;
 }
@@ -25,7 +23,7 @@ a {
 
 /* Custom page header */
 .header {
-  padding-bottom: 1rem;
+  padding-bottom: 0.3em;
   border-bottom: .05rem solid #e5e5e5;
   display: block;
 }
@@ -74,18 +72,22 @@ ul.nav li{
 }
 
 
-
+#logos {
+  text-align: center;
+}
 
 #h-name {
   color: rgb(198, 16, 45);
   margin-left: 1rem;
   text-shadow: 3px 3px 20px #077afb;
   font-weight: bold;
+  padding-top: 0.5em;
+  margin-bottom: 0px;
 }
 #h-subheading {
   color: rgb(198, 16, 45);
   border-bottom: .05rem solid rgb(198, 16, 45);
-  margin-top: 1em;
+  margin-top: 0px;
 }
 
 .lead {
@@ -99,7 +101,6 @@ ul.nav li{
   display: block;
   width: 100%;
   margin-right: auto;
-  margin-left: -1em;
   margin-bottom: 2rem;
 }
 
@@ -108,6 +109,7 @@ ul.nav li{
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
+  margin-bottom: 1em;
   width: 50%;
   border-radius: 10%;
 }
@@ -160,6 +162,19 @@ ul.nav li{
 }
 
 @media (max-width: 480px) {
+  .container-fluid {
+    width: 100%;
+  }
+  
+  .header {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #h-subheading {
+    margin-top: 1em;
+  }
+
   ul.nav{
     padding:0em;
     margin-bottom: 1em;
@@ -180,4 +195,8 @@ ul.nav li{
   #poster {
     width: 100%;
   }  
+  .col-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
